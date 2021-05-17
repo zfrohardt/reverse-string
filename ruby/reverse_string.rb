@@ -1,5 +1,11 @@
 def reverse_string(str)
-  # type your code in here
+  i = str.length - 1
+  string = []
+  until i < 0
+    string.push str[i]
+    i -= 1
+  end
+  string.join
 end
 
 if __FILE__ == $PROGRAM_NAME
