@@ -1,11 +1,7 @@
 def reverse_string(str)
-  i = str.length - 1
-  string = []
-  until i < 0
-    string.push str[i]
-    i -= 1
-  end
-  string.join
+  string = ""
+  str.chars.each { |s| string = s + string }
+  string
 end
 
 if __FILE__ == $PROGRAM_NAME
